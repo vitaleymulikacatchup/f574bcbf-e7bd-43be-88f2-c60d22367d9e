@@ -3,10 +3,12 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroBillboard from '@/components/sections/hero/HeroBillboard';
+import TextAbout from '@/components/sections/about/TextAbout';
+import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import TestimonialCardFour from '@/components/sections/testimonial/TestimonialCardFour';
+import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import Link from 'next/link';
-import { BookOpen, Facebook, Instagram, Star, Twitter, Users, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Star, Twitter, Users, Youtube, BookOpen, MessageCircle, Headphones, PenTool } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -54,6 +56,56 @@ export default function HomePage() {
         />
       </div>
 
+      <div id="about" data-section="about" className="mx-auto px-4 md:px-6">
+        <TextAbout
+          title="We make English learning fun, interactive, and effective. Our experienced teachers use modern methods to help you achieve fluency faster than traditional approaches."
+          buttons={[
+            {
+              text: "Our Methods",
+              href: "/courses"
+            },
+            {
+              text: "Meet Teachers",
+              href: "/contact"
+            }
+          ]}
+        />
+      </div>
+
+      <div id="feature" data-section="feature" className="mx-auto px-4 md:px-6">
+        <FeatureCardTwo
+          title="Our Teaching Methods"
+          description="Discover our comprehensive approach to English language learning"
+          tag="Learning"
+          tagIcon={BookOpen}
+          textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          features={[
+            {
+              title: "Speaking Practice",
+              description: "Interactive conversation sessions with native speakers to build confidence and fluency",
+              icon: MessageCircle
+            },
+            {
+              title: "Listening Skills",
+              description: "Audio exercises and multimedia content to improve comprehension and pronunciation",
+              icon: Headphones
+            },
+            {
+              title: "Reading Comprehension",
+              description: "Engaging texts and stories to expand vocabulary and understanding",
+              icon: BookOpen
+            },
+            {
+              title: "Writing Excellence",
+              description: "Structured writing exercises to master grammar and express ideas clearly",
+              icon: PenTool
+            }
+          ]}
+        />
+      </div>
+
       <div id="testimonials" data-section="testimonials" className="mx-auto px-4 md:px-6">
         <TestimonialCardFour
           title="What Our Students Say"
@@ -68,9 +120,8 @@ export default function HomePage() {
               role: "Marketing Manager",
               company: "Tech Corp",
               rating: 5,
-              imageSrc: "https://pixabay.com/get/g8409b30e4b0dc961e3be0198418d147e3629d507944d86cfd46635eca77a1814376fc4a87426cd759cdb7e6fe9aa54b5e0cdf8b601e1eca4d1a9a450b37bf697_1280.jpg",
-              imageAlt: "Sarah Johnson",
-              content: "Hello Everybody transformed my English skills completely. The interactive methods made learning enjoyable and effective."
+              imageSrc: "https://pixabay.com/get/g8409b30e4b0dc961e3be0198418d147e3629d507944d86cfd46635eca77a1814376fc4a87426cd759cdb7e6fe9aa54b5e0cdf8b215e6a5a2c23891a1b683be880995c21251_1280.jpg",
+              imageAlt: "Sarah Johnson"
             },
             {
               id: "2",
@@ -79,8 +130,7 @@ export default function HomePage() {
               company: "State University",
               rating: 5,
               imageSrc: "https://pixabay.com/get/gadf9ab3e279567aa2153b55e0f9696ad18b9b1210216a6aed718afb03ea750b16279f669784fd673fba9800898b4bf3f13f432ce6f63803f26cdbbc48ea74ed1_1280.jpg",
-              imageAlt: "Mike Chen",
-              content: "The teachers at Hello Everybody are amazing. They helped me gain confidence in speaking English fluently."
+              imageAlt: "Mike Chen"
             },
             {
               id: "3",
@@ -89,8 +139,7 @@ export default function HomePage() {
               company: "Local Restaurant",
               rating: 5,
               imageSrc: "https://pixabay.com/get/gf88f9c3faa089363a0ebe93f4912a46f3bd5c1ffc675d7c4f3c169cb9e039d7eaae806a3067cd88c758015827fb8b215e6a5a2c23891a1b683be880995c21251_1280.jpg",
-              imageAlt: "Anna Rodriguez",
-              content: "I improved my business English significantly with Hello Everybody. Their approach is practical and results-oriented."
+              imageAlt: "Anna Rodriguez"
             },
             {
               id: "4",
@@ -99,10 +148,21 @@ export default function HomePage() {
               company: "StartupXYZ",
               rating: 5,
               imageSrc: "https://pixabay.com/get/gc0969683a75463932fb0d6367304ff1d9d38800afd14c5dbe4fc6b8909b3f5100433c03ff1affe42f752de97c62a7f46b18cdc4ec4f7fb9903265027c65a944f_1280.jpg",
-              imageAlt: "Carlos Silva",
-              content: "The personalized learning approach at Hello Everybody helped me achieve my English language goals quickly."
+              imageAlt: "Carlos Silva"
             }
           ]}
+        />
+      </div>
+
+      <div id="contact" data-section="contact" className="mx-auto px-4 md:px-6">
+        <ContactCenter
+          tag="Enroll Today"
+          tagIcon={Users}
+          title="Ready to Start Your English Journey?"
+          description="Join Hello Everybody today and take the first step towards English fluency. Our experienced teachers are ready to guide you through every step of your learning journey."
+          inputPlaceholder="Enter your email"
+          buttonText="Get Started"
+          termsText="By signing up, you agree to receive updates about our courses and teaching methods. Unsubscribe anytime."
         />
       </div>
 

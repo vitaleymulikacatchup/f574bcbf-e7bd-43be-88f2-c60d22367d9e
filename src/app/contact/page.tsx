@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Users, Youtube } from 'lucide-react';
 
 export default function ContactPage() {

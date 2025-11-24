@@ -5,8 +5,7 @@ import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import TextAbout from '@/components/sections/about/TextAbout';
 import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import Link from 'next/link';
-import { BookOpen, Facebook, Headphones, Instagram, MessageCircle, PenTool, Twitter, Users, Youtube } from 'lucide-react';
+import { BookOpen, Facebook, Headphones, Instagram, MessageCircle, PenTool, Twitter, Youtube } from 'lucide-react';
 
 export default function AboutPage() {
   return (
