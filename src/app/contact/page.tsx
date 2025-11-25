@@ -6,7 +6,7 @@ import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { Facebook, Instagram, Twitter, Users, Zap, TrendingUp, Globe, MessageCircle, Clock } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Users, Zap, TrendingUp } from 'lucide-react';
 
 export default function ContactPage() {
   return (
