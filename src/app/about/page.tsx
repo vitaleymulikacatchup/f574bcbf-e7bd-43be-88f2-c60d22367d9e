@@ -4,8 +4,9 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import TextAbout from '@/components/sections/about/TextAbout';
 import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
+import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { BookOpen, Facebook, Headphones, Instagram, MessageCircle, PenTool, Twitter, Youtube } from 'lucide-react';
+import { BookOpen, Facebook, Headphones, Instagram, MessageCircle, PenTool, Twitter, Youtube, TrendingUp, Users, Award, Star } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -42,6 +43,48 @@ export default function AboutPage() {
             {
               text: "Meet Teachers",
               href: "/contact"
+            }
+          ]}
+        />
+      </div>
+
+      <div id="metric" data-section="metric" className="mx-auto px-4 md:px-6">
+        <MetricCardOne
+          title="Our Impact"
+          description="Key achievements that showcase our success in English education"
+          tag="Results"
+          tagIcon={TrendingUp}
+          textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          metrics={[
+            {
+              id: "1",
+              value: "500+",
+              title: "Students",
+              description: "Happy students learning English with us",
+              icon: Users
+            },
+            {
+              id: "2",
+              value: "95%",
+              title: "Success Rate",
+              description: "Students achieving their fluency goals",
+              icon: TrendingUp
+            },
+            {
+              id: "3",
+              value: "8",
+              title: "Years",
+              description: "Years of experience in English education",
+              icon: Award
+            },
+            {
+              id: "4",
+              value: "4.9",
+              title: "Rating",
+              description: "Average student satisfaction rating",
+              icon: Star
             }
           ]}
         />
