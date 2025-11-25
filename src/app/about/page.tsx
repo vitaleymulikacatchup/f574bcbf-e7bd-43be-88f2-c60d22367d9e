@@ -2,10 +2,11 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
+import HeroSplit from '@/components/sections/hero/HeroSplit';
 import TextAbout from '@/components/sections/about/TextAbout';
 import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { BookOpen, Facebook, Headphones, Instagram, MessageCircle, PenTool, Twitter, Youtube } from 'lucide-react';
+import { BookOpen, Facebook, Headphones, Instagram, MessageCircle, PenTool, Twitter, Users, Youtube } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -28,6 +29,28 @@ export default function AboutPage() {
             text: "Enroll Now",
             href: "/contact"
           }}
+        />
+      </div>
+
+      <div id="hero" data-section="hero" className="mx-auto px-4 md:px-6">
+        <HeroSplit
+          title="Learn English with Expert Teachers"
+          description="Our experienced instructors use proven methodologies to help you master English quickly and effectively. Join our community of successful learners."
+          tag="About Our School"
+          tagIcon={Users}
+          imagePosition="right"
+          buttons={[
+            {
+              text: "Start Learning",
+              href: "/contact"
+            },
+            {
+              text: "Our Courses",
+              href: "/courses"
+            }
+          ]}
+          imageSrc="https://pixabay.com/get/g2ab780970cf947e0c3757ade9547329f8e53d551a396647dfd674498429f99cc9e379d60f12c01803b5b3fc9f2d3cc002b49eaf5fff4329dbcfbad9365ae7c33_1280.jpg"
+          imageAlt="Happy students learning English together"
         />
       </div>
 
