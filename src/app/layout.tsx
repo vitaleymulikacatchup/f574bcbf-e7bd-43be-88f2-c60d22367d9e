@@ -10,27 +10,27 @@ const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: "Hello Everybody - English School for Everyone",
-  description: "Learn English with Hello Everybody's interactive teaching methods. Join thousands of students achieving fluency with our proven approach and experienced teachers.",
-  keywords: "english school, learn english, english classes, language learning, english teachers, fluency, conversation practice",
+  title: "Contact - Hello Everybody English School",
+  description: "Get in touch with Hello Everybody English School. Contact our experienced teachers, ask questions about our courses, or schedule a consultation to start your English learning journey.",
+  keywords: "contact english school, hello everybody contact, english classes inquiry, language learning consultation, english teachers contact",
   metadataBase: new URL("https://helloeverybody.com"),
   alternates: {
-    canonical: "https://helloeverybody.com"
+    canonical: "https://helloeverybody.com/contact"
   },
   openGraph: {
-    title: "Hello Everybody - English School for Everyone",
-    description: "Learn English with Hello Everybody's interactive teaching methods. Join thousands of students achieving fluency.",
+    title: "Contact - Hello Everybody English School",
+    description: "Get in touch with Hello Everybody English School. Contact our experienced teachers and start your English learning journey.",
     siteName: "Hello Everybody English School",
     type: "website",
     images: [{
       url: "https://pixabay.com/get/g2ab780970cf947e0c3757ade9547329f8e53d551a396647dfd674498429f99cc9e379d60f12c01803b5b3fc9f2d3cc002b49eaf5fff4329dbcfbad9365ae7c33_1280.jpg",
-      alt: "Happy students learning English together"
+      alt: "Contact Hello Everybody English School"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hello Everybody - English School for Everyone",
-    description: "Learn English with Hello Everybody's interactive teaching methods. Join thousands of students achieving fluency.",
+    title: "Contact - Hello Everybody English School",
+    description: "Get in touch with Hello Everybody English School. Contact our experienced teachers and start your English learning journey.",
     images: ["https://pixabay.com/get/g2ab780970cf947e0c3757ade9547329f8e53d551a396647dfd674498429f99cc9e379d60f12c01803b5b3fc9f2d3cc002b49eaf5fff4329dbcfbad9365ae7c33_1280.jpg"]
   },
   robots: {
