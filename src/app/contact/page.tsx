@@ -184,6 +184,28 @@ export default function ContactPage() {
         />
       </div>
 
+      <div id="courses" data-section="courses" className="mx-auto px-4 md:px-6">
+        <HeroSplit
+          title="Choose Your Course Level"
+          description="Find the perfect English course based on your current skill level and learning goals. Our comprehensive programs are designed to help you succeed."
+          tag="Course Levels"
+          tagIcon={BookOpen}
+          imagePosition="left"
+          buttons={[
+            {
+              text: "View All Courses",
+              href: "/courses"
+            },
+            {
+              text: "Take Assessment",
+              href: "/contact"
+            }
+          ]}
+          imageSrc="https://pixabay.com/get/g2ab780970cf947e0c3757ade9547329f8e53d551a396647dfd674498429f99cc9e379d60f12c01803b5b3fc9f2d3cc002b49eaf5fff4329dbcfbad9365ae7c33_1280.jpg"
+          imageAlt="Students at different learning levels"
+        />
+      </div>
+
       <div id="footer" data-section="footer">
         <FooterSocial
           logoText="Hello Everybody"
