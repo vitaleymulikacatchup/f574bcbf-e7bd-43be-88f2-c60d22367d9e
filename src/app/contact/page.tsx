@@ -3,9 +3,10 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 import HeroBillboard from '@/components/sections/hero/HeroBillboard';
+import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { Facebook, Instagram, Twitter, Users, Youtube, Zap } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Users, Zap, TrendingUp, Globe, MessageCircle, Clock } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -50,6 +51,41 @@ export default function ContactPage() {
           imageSrc="https://pixabay.com/get/g2ab780970cf947e0c3757ade9547329f8e53d551a396647dfd674498429f99cc9e379d60f12c01803b5b3fc9f2d3cc002b49eaf5fff4329dbcfbad9365ae7c33_1280.jpg"
           imageAlt="Happy students learning English together"
           frameStyle="card"
+        />
+      </div>
+
+      <div id="metric" data-section="metric" className="mx-auto px-4 md:px-6">
+        <MetricCardTwo
+          title="Our Impact in Numbers"
+          description="See the measurable results of our English teaching methods"
+          tag="Student Success"
+          tagIcon={TrendingUp}
+          textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          carouselMode="buttons"
+          metrics={[
+            {
+              id: "1",
+              value: "2,500+",
+              description: "Happy Students Worldwide"
+            },
+            {
+              id: "2",
+              value: "95%",
+              description: "Success Rate in Fluency"
+            },
+            {
+              id: "3",
+              value: "8 Weeks",
+              description: "Average Time to Conversational Level"
+            },
+            {
+              id: "4",
+              value: "15+",
+              description: "Countries We Serve"
+            }
+          ]}
         />
       </div>
 
