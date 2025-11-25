@@ -2,9 +2,10 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
+import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { Facebook, Instagram, Twitter, Users, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Users, Youtube, Zap } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -27,6 +28,28 @@ export default function ContactPage() {
             text: "Enroll Now",
             href: "/contact"
           }}
+        />
+      </div>
+
+      <div id="hero" data-section="hero" className="mx-auto px-4 md:px-6">
+        <HeroBillboard
+          title="Get in Touch with Hello Everybody"
+          description="Ready to start your English learning journey? Contact us today and discover how our proven teaching methods can help you achieve fluency faster."
+          tag="Contact Us"
+          tagIcon={Zap}
+          buttons={[
+            {
+              text: "Start Learning",
+              href: "/contact"
+            },
+            {
+              text: "Learn More",
+              href: "/about"
+            }
+          ]}
+          imageSrc="https://pixabay.com/get/g2ab780970cf947e0c3757ade9547329f8e53d551a396647dfd674498429f99cc9e379d60f12c01803b5b3fc9f2d3cc002b49eaf5fff4329dbcfbad9365ae7c33_1280.jpg"
+          imageAlt="Happy students learning English together"
+          frameStyle="card"
         />
       </div>
 
